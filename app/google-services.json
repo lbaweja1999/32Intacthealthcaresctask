@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "266837185117",
+    "firebase_url": "https://intacthealthcare-b078b.firebaseio.com",
+    "project_id": "intacthealthcare-b078b",
+    "storage_bucket": "intacthealthcare-b078b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266837185117:android:b680607cf78e8b1a26b3b4",
+        "android_client_info": {
+          "package_name": "com.example.a32intacthealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266837185117-uaqsjaer5ftm932alkbp6eiaobd6ieak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a32intacthealthcare",
+            "certificate_hash": "7250f3fc5ecd53564e0e249a113a8ca63314dc69"
+          }
+        },
+        {
+          "client_id": "266837185117-fmhrkjpmn5f4l3hnif7oca17hq5q683o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhBKrk31gt4OAxisWr49l_58jH-ONB6ms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266837185117-fmhrkjpmn5f4l3hnif7oca17hq5q683o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

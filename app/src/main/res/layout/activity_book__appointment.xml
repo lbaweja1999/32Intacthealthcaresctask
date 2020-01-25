@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Book_Appointment">
+    <include
+        layout="@layout/toolbar"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Please enter the following details"
+        android:textStyle="bold"
+        android:id="@+id/tv_la"
+        android:textAlignment="center"
+        ></TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyHintStyle"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_la"
+        android:hint="Name"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/edname"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        style="@style/LoginTextInputLayoutStyle"
+
+        android:layout_marginHorizontal="25dp"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+style="@style/LoginTextInputLayoutStyle"
+            android:textColorHint="@color/colorPrimary"
+            android:id="@+id/tv_name"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edname"
+        app:hintTextAppearance="@style/MyHintStyle"
+        android:clickable="true"
+        android:textColorHint="@color/colorPrimary"
+        android:editable="false"
+        android:focusable="false"
+        style="@style/LoginTextInputLayoutStyle"
+        android:id="@+id/edphone"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Contact No.">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/tv_phone"
+
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="number"
+            android:maxLength="10"
+            style="@style/LoginTextInputLayoutStyle"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/MyHintStyle"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edphone"
+        style="@style/LoginTextInputLayoutStyle"
+        android:id="@+id/edadd"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:textColorHint="@color/colorPrimary"
+            android:id="@+id/tv_add"
+            style="@style/LoginTextInputLayoutStyle"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:hintTextAppearance="@style/MyHintStyle"
+        android:layout_below="@+id/edadd"
+        android:id="@+id/eddate"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_marginHorizontal="25dp"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/tv_date"
+            android:focusableInTouchMode="false"
+style="@style/LoginTextInputLayoutStyle"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/MyHintStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/eddate"
+        android:id="@+id/edtime"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_marginHorizontal="25dp"
+        android:clickable="true"
+        android:editable="false"
+        android:textColorHint="@color/colorPrimary"
+        android:focusableInTouchMode="false"
+
+        android:focusable="false"
+        android:hint="Time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/tv_time"
+            style="@style/LoginTextInputLayoutStyle"
+            android:focusableInTouchMode="false"
+            android:textColorHint="@color/colorPrimary"
+
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyHintStyle"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edtime"
+        style="@style/LoginTextInputLayoutStyle"
+        android:id="@+id/edprob"
+        android:layout_marginHorizontal="25dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Problem">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/tv_prob"
+            style="@style/LoginTextInputLayoutStyle"
+            android:maxLines="3"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edprob"
+        android:layout_marginTop="25dp"
+        android:id="@+id/bookapp"
+        android:text="Book Appointment"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_local_hospital_black_24dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:layout_marginLeft="15dp"></Button>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edprob"
+        android:layout_marginTop="25dp"
+        android:id="@+id/remind"
+        android:text="Remind Me"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_add_alert_black_24dp"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@+id/bookapp"
+        android:background="@drawable/button_shape"
+        android:layout_marginLeft="12dp"></Button>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remind"
+        android:layout_marginTop="15dp"
+        android:id="@+id/clear"
+        android:text="Clear All"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_format_clear_black_24dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"></Button>
+</RelativeLayout>

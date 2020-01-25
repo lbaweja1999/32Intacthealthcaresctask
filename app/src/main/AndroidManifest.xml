@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a32intacthealthcare">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/intactlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/intactlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <receiver android:name = ".Broadcastreceivers.MyNotificationPublisher" />
+        <activity android:name=".Activities.Check_appointments"></activity>
+        <activity android:name=".Activities.Book_Appointment" />
+        <activity
+            android:name=".Firebase.GmailIntegration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
